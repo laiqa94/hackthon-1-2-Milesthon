@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device width", initial-scale="1.0">
+        <title>Resume Builder</title>
+        <link rel="stylesheet" href="style.css">
+        <div id="resume-output" style="display: none;"></div>
+    </head>
+    <body>
+        <h1>1,2 Static Resume Builder By Laiqa khan</h1>
+        <form id="resumeForm">
+            <fieldset>                                            
+            <legend> personal information</legend>
+            <label for="name">name: </label>
+            <input type="text">
+            <label for="Email">email:</label>
+         <input type="email" id="email" name="email" required>
+            <label for="Phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <!--profile Picture--> 
+            <label for="profilePicture">profilePicture</label>    
+             <input type="file" id="profileImage" accept="image/*" required/>
+
+            </fieldset>
+          <!--Education-->
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education</label>
+                <textarea id="education" name="education" rows="4" required></textarea> <br>
+            </fieldset>
+            <!--Experience-->
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="experience">Experience</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea> <br>
+            </fieldset>
+            <!--Skills-->
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea> <br>
+            </fieldset>
+            <button type="submit">Generate Resume Below</button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
+ 
